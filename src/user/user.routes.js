@@ -10,6 +10,6 @@ router.get("/", getUsers)
 
 router.delete("/deleteUser/:uid", deleteUserValidator, deleteUser)
 
-router.patch("/updatePassword/:uid") // patch solo actualiza solo un elemento un put es un n cantidad de elementos
+router.patch("/updatePassword/:uid", updatePasswordValidator, updatePassword) // patch solo actualiza solo un elemento un put es un n cantidad de elementos
 
 export default router
